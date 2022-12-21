@@ -3,7 +3,7 @@
     <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"/>
 
     <PropertyGroup>
-        <TargetFrameworks>net5.0</TargetFrameworks>     
+        <TargetFrameworks>net6.0</TargetFrameworks>     
     </PropertyGroup>
 
     <!-- Build the JS files before building the backend -->
