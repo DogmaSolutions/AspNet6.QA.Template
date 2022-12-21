@@ -1,10 +1,10 @@
-# ASP.NET 5 Quality Assurance coding rules and best practices
-An opinionated set of files and configurations usefull to enforce coding best practices and uniformity in ASP.NET 5 projects
+# ASP.NET 6 Quality Assurance coding rules and best practices
+An opinionated set of files and configurations usefull to enforce coding best practices and uniformity in ASP.NET 6 projects
 
 # Content of this project and basic assumptions
 This repository assumes that there are two "levels"
 - **Root** folder → the root directory containing all the projects of the solution
-  - **WebSite** folder → a folder containing an hypotetical  ASP.NET 5 web application, *inheriting and extending* the settings contained into the _Root_ folder
+  - **WebSite** folder → a folder containing an hypotetical  ASP.NET 6 web application, *inheriting and extending* the settings contained into the _Root_ folder
 
 # Usage
 Just copy all the files into the root of your target solution and/or related subfolders as needed (if and when an override/extension is required).
@@ -28,7 +28,7 @@ This folder represents the root directory containing all the projects of the sol
 
 
 # WebSite subfolder
-This folder represents a directory containing an hypotetical ASP.NET 5 web application, *inheriting and extending* the settings contained into the _Root_ folder,
+This folder represents a directory containing an hypotetical ASP.NET 6 web application, *inheriting and extending* the settings contained into the _Root_ folder,
 The files are:
 - **Directory.Build.props** → Inherit and extends the _Directory.Build.props_ contained into the parent folder, and hooks a [Gulp](https://gulpjs.com/) task in the `BeforeTargets="PostBuildEvent"` that process the JS files using [ESLint](https://eslint.org/)
 - **package.json** → install [Babel](https://babeljs.io/), [ESLint](https://eslint.org/) and other basic dependencies. Also define the `eslint` script launched via [Gulp](https://gulpjs.com/), used to execute [ESLint](https://eslint.org/)
